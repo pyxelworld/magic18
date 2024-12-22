@@ -27,7 +27,7 @@ image = (
     Image.debian_slim()
     .pip_install(*REQUIREMENTS)
     .env({
-        "POE_ACCESS_KEY": "uYr6O0dKHvgSH2nxLvQe4O8dCs0kPo31",
+        "POE_ACCESS_KEY": "W4CgtzW6XzMBfvM8rAl8xSzYfeUzTlte",
         "GEMINI_API_KEY": "AIzaSyCuKxOa7GoY6id_aG-C3_uhvfJ1iI0SeQ0",
     })
 )
@@ -38,5 +38,5 @@ app = App("wrapper-bot-poe")
 @asgi_app()
 def fastapi_app():
     bot = WrapperBot()
-    app = fp.make_app(bot, access_key="uYr6O0dKHvgSH2nxLvQe4O8dCs0kPo31", bot_name="Magic18")
+    app = fp.make_app(bot, access_key="uYr6O0dKHvgSH2nxLvQe4O8dCs0kPo31", bot_name="MagicServer")
     return app
